@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KISWAH TEXTILE | Ladies' Unstitched Suits & Fabric Collections</title>
+<meta name="description" content="Kiswah Textile: elegant ladies' unstitched suits and fabric collections. Browse embroidered and printed designs, including the Gulkari collection, and enquire on WhatsApp.">
+<meta property="og:title" content="KISWAH TEXTILE | Ladies' Unstitched Suits & Fabric">
+<meta property="og:description" content="Browse ladies' unstitched suits and fabric collections and enquire on WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/brand/logo.jpg">
+<link rel="icon" href="assets/images/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav" id="top">
+  <a class="brand" href="#top">Kiswah Textile</a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#collection" data-filter-brand="">Collection</a><a href="#gulkari" data-filter-brand="Gulkari">Gulkari</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Discover Elegant Fabric &amp; Suit Collections</h1>
+    <p>Explore beautiful ladies' unstitched suits, refined fabrics, and selected collections at Kiswah Textile.</p>
+    <div class="btns"><a class="btn gold" href="#collection">Explore Collection</a><button class="btn line wa" data-wa="">Contact on WhatsApp</button></div>
+    <p class="tag">Premium Fabric &bull; Elegant Designs</p>
+  </div>
+  <img class="hero-img" src="assets/images/products/thumbs/1693-b.jpg" alt="Model wearing embroidered suit, design 1693, in a garden by a pool" width="480" height="800">
+</section>
+
+<section class="wrap" aria-labelledby="cats">
+  <h2 id="cats">Browse by style</h2>
+  <div class="cats">
+    <a href="#collection" data-cat="Embroidered"><img loading="lazy" src="assets/images/products/thumbs/1698-b.jpg" alt="Embroidered suit, design 1698"><span>Embroidered Suits</span></a>
+    <a href="#collection" data-cat="Printed"><img loading="lazy" src="assets/images/products/thumbs/1678.jpg" alt="Printed suit, design 1678"><span>Printed Suits</span></a>
+    <a href="#gulkari" data-filter-brand="Gulkari"><img loading="lazy" src="assets/images/products/thumbs/1682.jpg" alt="Gulkari suit, design 1682"><span>Gulkari Collection</span></a>
+  </div>
+</section>
+
+<section class="wrap" id="collection" aria-labelledby="cat-h">
+  <h2 id="cat-h">Ladies' Unstitched Suits</h2>
+  <div class="filters">
+    <label>Search code<input id="q" type="search" placeholder="e.g. 1693"></label>
+    <label>Collection<select id="fb"></select></label>
+    <label>Fabric<select id="ff"></select></label>
+    <label>Style<select id="fc"></select></label>
+  </div>
+  <p id="count" class="muted" aria-live="polite"></p>
+  <div id="grid" class="grid"></div>
+  <p id="empty" class="muted" hidden>No designs match. Clear the search or change a filter.</p>
+</section>
+
+<section class="gulkari" id="gulkari">
+  <div class="wrap g-in">
+    <div><h2>Gulkari Collection</h2><p>Gulkari is a label sold at Kiswah Textile. Original Gulkari artwork is shown on every poster in the large view.</p>
+    <button class="btn gold" id="show-g">View Gulkari designs</button></div>
+  </div>
+</section>
+
+<section class="wrap about" id="about">
+  <h2>About Kiswah Textile</h2>
+  <p>Kiswah Textile brings together elegant fabric and clothing collections, with a focus on ladies' unstitched suits and selected styles for different needs.</p>
+  <img loading="lazy" src="assets/images/brand/logo.jpg" alt="Kiswah Textile logo" width="220" height="220">
+</section>
+
+<section class="wrap" id="contact">
+  <h2>Contact</h2>
+  <p>Send us a design code on WhatsApp and we will reply with details.</p>
+  <button class="btn gold wa" data-wa="">Message on WhatsApp</button>
+  <p class="muted" id="social"></p>
+</section>
+</main>
+
+<footer>
+  <strong>KISWAH TEXTILE</strong>
+  <p>Ladies' unstitched suits and fabric collections.</p>
+  <nav aria-label="Footer"><a href="#home">Home</a><a href="#collection">Collection</a><a href="#gulkari">Gulkari</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <small>&copy; <span id="yr"></span> Kiswah Textile</small>
+</footer>
+
+<dialog id="lb" aria-label="Design details">
+  <button class="x" aria-label="Close">&times;</button>
+  <div class="lb-body"><div><img id="lb-img" alt=""><div id="lb-th" class="th"></div></div>
+  <div class="lb-info"><h3 id="lb-t"></h3><p id="lb-m" class="muted"></p><ul id="lb-d"></ul><button class="btn gold wa" id="lb-wa">Enquire on WhatsApp</button></div></div>
+</dialog>
+<div id="toast" role="status"></div>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
